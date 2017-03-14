@@ -6,3 +6,13 @@ body {
   margin: 0;
   font: 16px / 1 sans-serif;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
