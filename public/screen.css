@@ -5,14 +5,57 @@ html {
 body {
   margin: 0;
   font: 16px / 1 sans-serif;
+  background-color: white;
+  border-style: solid;
+  border-top-color: #ff0000;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background: #d0e6d6;
 }
 
 li {
     display: inline;
+    padding: 10px;
+}
+
+hr{
+    color: red;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 10px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    border-color: #d0e6d6;
+  }
+
+
+.center{
+  text-align: center;
+}
+
+.flex-item{
+ background-color: white;
+ flex: 1;
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction and if we allow the items to wrap
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  /*flex-flow: row wrap;*/
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+
+  background-color: white;
 }
